@@ -1,0 +1,87 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.section{
+  width: 100%;
+  overflow: none;
+  margin: 10px;
+}
+.subtitle{
+  overflow: none;
+  float: right;
+  text-align: center;
+  border: 1px solid black;
+  width: 100px;
+  padding: 5px;
+  position: relative; 
+  margin: 0;
+}
+.title1{
+  background-color: green;
+}
+.title2{
+  background-color: blue;
+}
+.title3{
+  background-color: pink;
+}
+.content{
+  padding: 40px 15px 15px 15px;
+  margin: 0;
+  height: auto;
+  border: 1px solid black;
+  color: black;
+  background-color: grey;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    border: 1px solid green;
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    margin-left: -10px;
+    width: 100%;
+  }
+}
+/*************mobile devices ******/
+@media (min-width: 0px) and (max-width: 767px) {
+  .col-sm-12{
+    float:left;
+    width: 100%;
+  }
+  .subtitle{
+    margin-right: 30px;
+  }
+}
